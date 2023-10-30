@@ -1,0 +1,135 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;900&family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Font Specificity
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+
+}
+/* navbar anchor */
+#navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 20px; 
+    font-size: 20px; 
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+
+/* when hovering cursor over nav item */
+#navbar a:hover {
+    border-bottom: 3px solid yellow;
+    color: black;
+    transition: all .4s;
+}
+/* body backgroung color */
+body {
+    background: radial-gradient(white 5%, black 95%) no-repeat;
+}
+/* Home Section */
+#Home {
+    height: 600px;
+    width: 100%;
+}
+/* container */
+#home-container {
+    position: absolute;
+    left: 110px;
+    top: 300px;
+    font-weight: bold;
+}
+/* about me section */
+#aboutme {
+    height: 750px;
+    width: 100%;
+    background: linear-gradient(dimgrey, dimgray);
+}
+.paragraph{
+    position: relative;
+    display: inline-block;
+    text-align: justify;
+    width: 600px;
+    right: -300px;
+    top: 150px;
+    background-color: rgba(255, 255, 255, 0.762);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 8px 16px rgb(72, 72, 72);
+}
+.image {
+    position: relative;
+    left: 80px;
+    top: -60px;
+}
+/* Experience Section */
+#experience {
+    height: 600px;
+    width: 100%;
+}
+/* Experience box individual */
+.column {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+}
+.box {
+
+    width: 400px;
+    height: auto;
+    background-color: rgb(72, 72, 72);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+}
+/* Contact Me Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#contact h1 {
+    margin: 50px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input {
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+#message {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#submit {
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: #000000dc;
+    color: white;
+    border: none;
+    outline: none;
+}
+#submit:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
