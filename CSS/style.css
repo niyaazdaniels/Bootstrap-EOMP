@@ -1,3 +1,12 @@
+:root {
+    --cardbg: #4f7178;
+    --something: #e5e5e5c4;
+    --text: #000000;
+    --offWhite: #ffffff75;
+    --thumb: #edf2f4;
+    --link: rgb(134, 32, 32);
+}
+
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;900&family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800&display=swap');
 
@@ -12,7 +21,6 @@ font-family: 'Roboto Condensed', sans-serif; */
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
     overflow-x: hidden;
-
 }
 /* navbar anchor */
 #navbar a{
@@ -26,7 +34,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 /* when hovering cursor over nav item */
 #navbar a:hover {
     border-bottom: 3px solid yellow;
-    color: black;
+    color: var(--text);
     transition: all .4s;
 }
 /* body backgroung color */
@@ -49,23 +57,25 @@ body {
 #aboutme {
     height: 750px;
     width: 100%;
-    background: linear-gradient(dimgrey, dimgray);
+    background: linear-gradient(dimgrey, rgb(153, 149, 149));
 }
-.paragraph{
+/* about me section paragraph */
+.paragraph {
     position: relative;
     display: inline-block;
     text-align: justify;
     width: 600px;
-    right: -300px;
+    right: -200px;
     top: 150px;
     background-color: rgba(255, 255, 255, 0.762);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 4px 8px 16px rgb(72, 72, 72);
 }
+/* about me section image portrait */
 .image {
     position: relative;
-    left: 80px;
+    left: 20px;
     top: -60px;
 }
 /* Experience Section */
@@ -79,8 +89,8 @@ body {
     flex-direction: row;
     flex-flow: nowrap;
 }
+/* Experience Box */
 .box {
-
     width: 400px;
     height: auto;
     background-color: rgb(72, 72, 72);
@@ -89,7 +99,86 @@ body {
     margin: 10px;
     color: white;
 }
-/* Contact Me Section */
+                    /* Projects Section */
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+.cards {
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-column-gap: 10px;
+    grid-auto-flow: column;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+}
+/* individual cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: var(--offWhite);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.4s;
+}
+/* when hovering over individual cards */
+.card:hover {
+    color: var(--offWhite);
+    background:var(--cardbg);
+}
+/* card heading */
+.card .card-title {
+    font-size: 20px;
+}
+/* card contents */
+.card .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+}
+.card .card-link-wrapper {
+    margin-top: auto;
+}
+/* link within cards i.e Github and Netlify */
+.card .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text);
+    background: var(--something);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.4s;
+}
+/* when hovering over the card, link changes */
+.card:hover .card-link {
+    background: var(--link);
+}
+.cards::-webkit-scrollbar {
+    height: 12px;
+}
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: var(--darkorange);
+}
+
+.cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+}
+
+                    /* Contact Me Section */
 #contact {
     display: flex;
     flex-direction: column;
@@ -133,3 +222,37 @@ body {
     cursor: pointer;
 }
 
+/* Media Queries Projects */
+@media (min-width: 500px) {
+    .cards {
+        grid-auto-columns: calc(50% - 10px);
+        grid-column-gap: 20px;
+    }
+}
+@media (min-width: 700px) {
+    .cards {
+        grid-auto-columns: calc(calc(100% / 3) - 20px);
+        grid-column-gap: 30px;
+    }
+}
+@media (min-width: 1100px) {
+    .cards {
+        grid-auto-columns: calc(25% - 30px);
+        grid-column-gap: 40px;
+    }
+}
+@media (max-width: 850px) {
+     #home-container {
+        position: absolute;
+        left: 0px;
+     }    
+     #aboutme {
+        width: 100%;
+        overflow: hidden;
+        height: 600px;
+     }
+     .image {
+        aspect-ratio: 1/1;
+     }
+     }
+    
