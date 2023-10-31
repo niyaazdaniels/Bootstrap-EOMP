@@ -48,7 +48,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 /* body background color */
 body {
-    background: radial-gradient(white 5%, black 95%) no-repeat;
+    background: linear-gradient(#1985A1, #4C5C68,#46494C,#C4C3C6,#DCDCDD) no-repeat;
 }
 
 
