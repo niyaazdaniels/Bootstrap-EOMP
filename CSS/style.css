@@ -65,6 +65,26 @@ body {
     top: 330px;
     font-weight: bolder;
 }
+@media (max-width:300px) {
+    #home-container {
+        display: block;
+
+    }
+    #home-container h1{
+        font-size: 16px;
+    }
+    #home-container p{
+        font-size: 12px;
+    }
+    #button{
+        font-size: 10px;
+    }
+    #nav-image {
+        position: relative;
+        left: 30px;
+        
+    }
+}
 
 
 
@@ -133,7 +153,7 @@ body {
 #experience {
     height: 800px;
     width: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 /* Experience box individual */
 .column {
@@ -161,7 +181,7 @@ body {
         flex-direction: column;
         flex-flow: nowrap;
         height: 700px;
-        overflow-y: hidden;
+        overflow:hidden;
     }
     .column{
         display: flex;
@@ -170,15 +190,15 @@ body {
     .box p{
         display: block;
         width: 250px;
-        font-size: 10px;
+        font-size: 8px;
     }
     .box h2{
         font-size: 10px;
         
     }
     .box {
-        margin: 1px;
-        padding: 3px;
+        margin: 3px;
+        padding: 8px;
     }
     .box:hover{
         transform: none;
@@ -229,13 +249,10 @@ h2 {
 .card .card-title {
     font-size: 20px;
 }
-/* card contents */
-/* .card .card-content {
- 
- 
-} */
+
 .card .card-link-wrapper {
     margin-top: auto;
+    gap: 1;
 }
 /* link within cards i.e Github and Netlify */
 .card .card-link {
@@ -332,11 +349,12 @@ h2 {
     }
     .skills {
         display: block;
-        margin: 0 auto;
-        overflow: hidden;
+        position: relative;
+        left: 0;
     }
-    .skill-logo {
-        width: auto;
+    #skill-logo {
+       width: 50px;
+       height: 50px;
     }
     .container {
         height: 450px;
