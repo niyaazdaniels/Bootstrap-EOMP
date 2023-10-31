@@ -5,6 +5,7 @@
     --offWhite: #ffffff75;
     --white: #edf2f4;
     --link: rgb(134, 32, 32);
+    --scroll:#626262;
 }
 
 /* fonts */
@@ -185,12 +186,13 @@ h2 {
 }
 
 .cards::-webkit-scrollbar-thumb {
-    background: var(--text);
+    background: var(--scroll);
 }
 
 .cards::-webkit-scrollbar-track {
     background: var(--offWhite);
 }
+
 
 /* Education Section */
 #education {
@@ -209,7 +211,7 @@ h2 {
 }
 .gallery img {
     width: 360px;
-    height: 440px;
+    height: 400px;
     padding: 10px;
     margin: 10px;
 }
@@ -218,11 +220,25 @@ h2 {
     cursor: pointer;
     transition: all 0.9s;
 }
-
 .skills {
-    max-width: 500px;
+    display: block;
+    margin: 0 auto;
 }
-
+.rows {
+    max-width: 600px;
+    display: flex;
+}
+#skill-logo {
+    filter: grayscale(100%);
+    margin: 30px;
+    padding: 10px;
+}
+#skill-logo:hover {
+    filter: grayscale(0);
+    transition: all .8s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 
 /* Contact Me Section */
@@ -234,6 +250,7 @@ h2 {
 #contact h1 {
     margin: 50px;
 }
+/* Form */
 .form {
     display: flex;
     flex-direction: column;
@@ -248,11 +265,13 @@ h2 {
     outline: none;
     border-radius: 30px;
 }
+/* Text Area */
 #message {
     margin: 15px;
     padding: 10px;
     border-radius: 20px;
 }
+/* Button */
 #Submit {
     padding: 15px 20px;
     margin: 30px;
@@ -266,7 +285,6 @@ h2 {
 }
 #Submit:hover {
     background-color: green;
-    
     color: white;
     cursor: pointer;
 }
