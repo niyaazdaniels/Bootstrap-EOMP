@@ -63,23 +63,23 @@ body {
     width: 100%;
     background: linear-gradient(dimgrey, rgb(153, 149, 149));
 }
-/* about me section paragraph */
+/* About me section paragraph */
 .paragraph {
     position: relative;
     display: inline-block;
     text-align: justify;
-    width: 600px;
-    right: -200px;
+    width: 700px;
+    right: -190px;
     top: 150px;
     background-color: rgba(255, 255, 255, 0.762);
-    padding: 10px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 12px;
     box-shadow: 4px 8px 16px rgb(72, 72, 72);
 }
-/* about me section image portrait */
+/* About me section image portrait */
 .image {
     position: relative;
-    left: 20px;
+    left: 80px;
     top: -60px;
 }
 
