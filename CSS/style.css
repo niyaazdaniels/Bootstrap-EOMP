@@ -41,6 +41,8 @@ font-family: 'Roboto Condensed', sans-serif; */
 body {
     background: radial-gradient(white 5%, black 95%) no-repeat;
 }
+
+
 /* Home Section */
 #Home {
     height: 600px;
@@ -53,6 +55,8 @@ body {
     top: 300px;
     font-weight: bold;
 }
+
+
 /* about me section */
 #aboutme {
     height: 750px;
@@ -78,10 +82,13 @@ body {
     left: 20px;
     top: -60px;
 }
+
+
 /* Experience Section */
 #experience {
-    height: 600px;
+    height: 650px;
     width: 100%;
+    overflow: hidden;
 }
 /* Experience box individual */
 .column {
@@ -96,12 +103,15 @@ body {
     background-color: rgb(72, 72, 72);
     border-radius: 5px;
     padding: 5px;
-    margin: 10px;
+    margin: 35px;
     color: white;
 }
-                    /* Projects Section */
+
+
+/* Projects Section */
 .container {
     max-width: 1400px;
+    height: 650px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -141,10 +151,10 @@ h2 {
     font-size: 20px;
 }
 /* card contents */
-.card .card-content {
-    margin: 20px 0;
-    max-width: 85%;
-}
+/* .card .card-content {
+ 
+ 
+} */
 .card .card-link-wrapper {
     margin-top: auto;
 }
@@ -178,7 +188,7 @@ h2 {
     background: var(--thumb);
 }
 
-                    /* Contact Me Section */
+/* Contact Me Section */
 #contact {
     display: flex;
     flex-direction: column;
@@ -221,6 +231,24 @@ h2 {
     color: white;
     cursor: pointer;
 }
+
+
+/* Testimonials  Section */
+body{
+    background-color:#eee;
+}
+.card{
+    border:none;
+}
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+.ratings i{
+    color:blue;
+}
+
+
 
 /* Media Queries Projects */
 @media (min-width: 500px) {
