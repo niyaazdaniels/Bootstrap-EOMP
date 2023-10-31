@@ -61,44 +61,77 @@ body {
 /* container */
 #home-container {
     position: absolute;
-    left: 150px;
-    top: 350px;
+    left: 70px;
+    top: 330px;
     font-weight: bolder;
 }
 
 
 
 /* about me section */
-#aboutme {
-    height: 750px;
-    width: 100%;
-    background: linear-gradient(dimgrey, rgb(153, 149, 149));
-}
-/* About me section paragraph */
-.paragraph {
-    position: relative;
-    display: inline-block;
+#about {
+    display: flex;
+    flex-direction: column;
     text-align: justify;
-    width: 700px;
-    right: -190px;
-    top: 150px;
-    background-color: rgba(255, 255, 255, 0.762);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 4px 8px 16px rgb(72, 72, 72);
+    height: 100%;
 }
-/* About me section image portrait */
-.image {
-    position: relative;
-    left: 80px;
-    top: -60px;
+#about h1 {
+    color:black ;
+    margin: 55px;
 }
+.about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.about img {
+    width: 500px;
+    height: 400px;
+    padding: 0px 30px;
+    align-items: center;
+}
+.name {
+    padding: 10px;
+}
+.name h2{
+    font-size: 2rem;
+}
+.name p{
+    font-size: 1.2rem;
+}
+@media (max-width:300px) {
+   
+    .about {
+        flex-direction: column;
+        height: 1000px;
+        overflow-y: hidden ;
+    }
+    .about h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .heading {
+        text-align: center;
+    }
+    .about img {
+        width: 200px;
+        height: 200px;
+        padding: 0px 15px;
+    }
+    .about p {
+        font-size: 10px;
+        box-shadow: 2px 4px 16px rgb(72, 72, 72);
+        padding: 5px;
+        background-color: var(--cardbg);
+    }
+}
+
 
 
 
 /* Experience Section */
 #experience {
-    height: 650px;
+    height: 800px;
     width: 100%;
     overflow: hidden;
 }
@@ -113,18 +146,51 @@ body {
     width: 400px;
     height: auto;
     background-color: rgb(72, 72, 72);
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 20px;
     margin: 40px;
     color: var(--white);
 }
+.box:hover{
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+@media (max-width:300px){
+    #experience {
+        display: flex;
+        flex-direction: column;
+        flex-flow: nowrap;
+        height: 700px;
+        overflow-y: hidden;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .box p{
+        display: block;
+        width: 250px;
+        font-size: 10px;
+    }
+    .box h2{
+        font-size: 10px;
+        
+    }
+    .box {
+        margin: 1px;
+        padding: 3px;
+    }
+    .box:hover{
+        transform: none;
+    }
+    }
 
 
 
 /* Projects Section */
 .container {
     max-width: 1400px;
-    height: 650px;
+    height: 750px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -200,16 +266,24 @@ h2 {
 .cards::-webkit-scrollbar-track {
     background: var(--offWhite);
 }
+@media (max-width:300px){
+    .card {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 /* Education Section */
 #education {
     display: flex;
     flex-direction: column;
-    background-color: #87818198;
+    height: 850px;
+    overflow: hidden;
 }
 #education h1{
-    margin: 60px;
+    margin: 30px;
     text-align: center;
 }
 .gallery {
@@ -226,7 +300,7 @@ h2 {
 .gallery img:hover {
     background-color: white;
     cursor: pointer;
-    transition: all 0.9s;
+    transition: all 0.8s;
 }
 .skills {
     display: block;
@@ -246,6 +320,50 @@ h2 {
     transition: all .8s;
     transform: scale(1.1);
     cursor: pointer;
+}
+@media (max-width:300px) {
+    .gallery img {
+        width: 200px;
+        height: 250px;
+    }
+    #education {
+        height: 1000px;
+        overflow-y: hidden;
+    }
+    .skills {
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .skill-logo {
+        width: auto;
+    }
+    .container {
+        height: 450px;
+    }
+    #education h1 {
+        overflow: hidden;
+    }
+}
+
+
+/* Testimonials  Section */
+.card{
+    border:none;
+}
+.user-content p{
+    margin-top:10px;
+    font-size:12px;
+}
+@media (max-width:300px) {
+    #testimonials {
+        height: auto;
+        overflow-y: hidden;
+    }
+    .card {
+        padding: 5px;
+        margin: 5px;
+    }
 }
 
 
@@ -297,28 +415,26 @@ h2 {
     color: white;
     cursor: pointer;
 }
-
-
-
-/* Testimonials  Section */
-.card{
-    border:none;
-}
-.card:hover{
-    transition: all .5s;
-    transform: scale(1.1);
-   
-}
-.user-content p{
-    margin-top:10px;
-    font-size:12px;
-   
+/* Contact */
+@media (max-width:300px){
+    .input {
+       width: 100%;
+    }
+    #message {
+        width: 70%;
+    }
+    #Submit {
+        width: 50%;
+        padding: 5px;
+    }
 }
 
 
 /* Footer */
 #footer a{
     color: white;
+    padding: 5px;
+    font-size: 12px;
 }
 
 
