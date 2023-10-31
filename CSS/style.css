@@ -28,14 +28,14 @@ font-family: 'Roboto Condensed', sans-serif; */
     text-decoration: none;
     margin: 20px; 
     font-size: 20px; 
-    font-family: 'Roboto Condensed', sans-serif; 
+    font-family: 'Montserrat', sans-serif; 
 }
 
 /* when hovering cursor over nav item */
 #navbar a:hover {
     border-bottom: 2px solid yellow;
     color: var(--text);
-    transition: all .4s;
+    transition: all .6s;
 }
 /* body backgroung color */
 body {
@@ -45,15 +45,15 @@ body {
 
 /* Home Section */
 #Home {
-    height: 650px;
+    height: 700px;
     width: 100%;
 }
 /* container */
 #home-container {
     position: absolute;
-    left: 100px;
+    left: 150px;
     top: 350px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 
@@ -181,11 +181,11 @@ h2 {
 }
 
 .cards::-webkit-scrollbar-thumb {
-    background: var(--darkorange);
+    background: var(--text);
 }
 
 .cards::-webkit-scrollbar-track {
-    background: var(--thumb);
+    background: var(--offWhite);
 }
 
 /* Contact Me Section */
