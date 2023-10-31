@@ -304,10 +304,17 @@ h2 {
 .card{
     border:none;
 }
-.user-content p{
-    margin-top:5px;
-    font-size:12px;
+.card:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+   
 }
+.user-content p{
+    margin-top:10px;
+    font-size:12px;
+   
+}
+
 
 /* Footer */
 .footer {
