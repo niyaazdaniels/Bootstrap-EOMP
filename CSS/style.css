@@ -106,7 +106,7 @@ body {
     height: auto;
     background-color: rgb(72, 72, 72);
     border-radius: 5px;
-    padding: 5px;
+    padding: 20px;
     margin: 40px;
     color: var(--white);
 }
@@ -298,6 +298,12 @@ h2 {
 .user-content p{
     margin-top:5px;
     font-size:12px;
+}
+
+/* Footer */
+.footer {
+    color: white;
+    background-color: #1985a1;
 }
 
 
