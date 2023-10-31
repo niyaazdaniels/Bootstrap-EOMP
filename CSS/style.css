@@ -33,7 +33,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 /* when hovering cursor over nav item */
 #navbar a:hover {
-    border-bottom: 3px solid yellow;
+    border-bottom: 2px solid yellow;
     color: var(--text);
     transition: all .4s;
 }
@@ -45,14 +45,14 @@ body {
 
 /* Home Section */
 #Home {
-    height: 600px;
+    height: 650px;
     width: 100%;
 }
 /* container */
 #home-container {
     position: absolute;
-    left: 110px;
-    top: 300px;
+    left: 100px;
+    top: 350px;
     font-weight: bold;
 }
 
