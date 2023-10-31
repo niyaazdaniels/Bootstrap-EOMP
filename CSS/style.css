@@ -103,7 +103,7 @@ body {
     background-color: rgb(72, 72, 72);
     border-radius: 5px;
     padding: 5px;
-    margin: 35px;
+    margin: 40px;
     color: var(--white);
 }
 
@@ -243,9 +243,7 @@ h2 {
     margin-top:5px;
     font-size:12px;
 }
-.ratings i{
-    color:blue;
-}
+
 
 
 
