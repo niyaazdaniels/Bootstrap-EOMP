@@ -209,25 +209,27 @@ h2 {
     width: 40%;
     border: none;
     outline: none;
-    border-radius: 25px;
+    border-radius: 30px;
 }
 #message {
     margin: 15px;
     padding: 10px;
     border-radius: 20px;
 }
-#submit {
+#Submit {
     padding: 15px 20px;
     margin: 30px;
     width: 15%;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #000000dc;
     color: white;
     border: none;
     outline: none;
+    text-transform: uppercase;
 }
-#submit:hover {
+#Submit:hover {
     background-color: green;
+    
     color: white;
     cursor: pointer;
 }
