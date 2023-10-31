@@ -317,9 +317,8 @@ h2 {
 
 
 /* Footer */
-.footer {
+#footer a{
     color: white;
-    background-color: #1985a1;
 }
 
 
