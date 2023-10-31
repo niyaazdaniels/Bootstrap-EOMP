@@ -45,13 +45,13 @@ body {
 
 /* Home Section */
 #Home {
-    height: 650px;
+    height: 700px;
     width: 100%;
 }
 /* container */
 #home-container {
     position: absolute;
-    left: 100px;
+    left: 150px;
     top: 350px;
     font-weight: bold;
 }
@@ -181,11 +181,11 @@ h2 {
 }
 
 .cards::-webkit-scrollbar-thumb {
-    background: var(--darkorange);
+    background: var(--text);
 }
 
 .cards::-webkit-scrollbar-track {
-    background: var(--thumb);
+    background: var(--offWhite);
 }
 
 /* Contact Me Section */
