@@ -61,14 +61,13 @@ body {
 /* container */
 #home-container {
     position: absolute;
-    left: 70px;
+    left: 0px;
     top: 330px;
     font-weight: bolder;
 }
 @media (max-width:300px) {
     #home-container {
         display: block;
-
     }
     #home-container h1{
         font-size: 16px;
@@ -98,6 +97,7 @@ body {
 #about h1 {
     color:black ;
     margin: 55px;
+    text-align: center;
 }
 .about {
     display: flex;
@@ -105,19 +105,24 @@ body {
     margin-bottom: 20px;
 }
 .about img {
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 350px;
     padding: 0px 30px;
     align-items: center;
 }
 .name {
     padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 8px 16px rgb(72, 72, 72);
+    width: 800px;
+    background-color: var(--something);
 }
 .name h2{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .name p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 @media (max-width:300px) {
    
@@ -151,7 +156,7 @@ body {
 
 /* Experience Section */
 #experience {
-    height: 800px;
+    height: 600px;
     width: 100%;
     overflow-y: hidden;
 }
@@ -164,7 +169,7 @@ body {
 /* Experience Box */
 .box {
     width: 400px;
-    height: auto;
+    height: 500px;
     background-color: rgb(72, 72, 72);
     border-radius: 20px;
     padding: 20px;
@@ -210,7 +215,7 @@ body {
 /* Projects Section */
 .container {
     max-width: 1400px;
-    height: 750px;
+    height: 500px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -233,7 +238,7 @@ h2 {
 .card {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
     background: var(--offWhite);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
@@ -248,12 +253,18 @@ h2 {
 /* card heading */
 .card .card-title {
     font-size: 20px;
+    text-align: center;
 }
 
 .card .card-link-wrapper {
     margin-top: auto;
-    gap: 1;
+
+    text-align: center;
 }
+.card-content{
+    text-align: center;
+}
+
 /* link within cards i.e Github and Netlify */
 .card .card-link {
     display: inline-block;
@@ -405,10 +416,10 @@ h2 {
 .input {
     padding: 15px 20px;
     margin: 15px;
-    width: 40%;
+    width: 30%;
     border: none;
     outline: none;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 /* Text Area */
 #message {
@@ -418,9 +429,9 @@ h2 {
 }
 /* Button */
 #Submit {
-    padding: 15px 20px;
+    padding: 1px 20px;
     margin: 30px;
-    width: 15%;
+    width: 10%;
     border-radius: 30px;
     background-color: #000000dc;
     color: white;
