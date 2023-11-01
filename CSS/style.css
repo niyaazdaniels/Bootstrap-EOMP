@@ -46,6 +46,16 @@ font-family: 'Roboto Condensed', sans-serif; */
     color: var(--text);
     transition: all .6s;
 }
+@media (max-width:1080px) {
+    #navbar a {
+        font-size: 16px;
+    }
+    .icon {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+}
 /* body background color */
 body {
     background: linear-gradient(#1985A1, #4C5C68,#46494C,#C4C3C6,#DCDCDD) no-repeat;
@@ -71,11 +81,11 @@ body {
     #home-container {
         display: block;
         max-width: 280px;
+        height: auto;
     }
     #home-container h1{
         margin-top: 15px;
         font-size: 16px;
-        
     }
     #home-container p{
         font-size: 12px;
@@ -86,10 +96,42 @@ body {
     #nav-image {
         position: relative;
         left: 30px;
-        
     }
 }
-
+@media (max-width:360px) {
+    #home-container {
+        position: absolute;
+        right: 0;
+        height: auto;
+        max-width: 300px;
+    }
+    #home-container h1{
+        font-size: 14px;
+    }
+    #home-container p{
+        font-size: 12px;
+    }
+    #button{
+        font-size: 10px;
+    }
+}
+@media (max-width:720px) {
+    #home-container {
+        position: absolute;
+        right: 0;
+        height: auto;
+    }
+    #home-container h1 {
+        font-size: 20px;
+    }
+    #home-container p {
+        font-size: 14px;
+    }
+    #button {
+        font-size: 10px;
+    }
+    
+}
 
 
 /* about me section */
@@ -132,11 +174,11 @@ body {
 @media (max-width:300px) {
    
     .about {
-        margin-top: 60px;
         display: flex;
         flex-direction: column;
         flex-flow: row wrap;
         overflow-y: hidden ;
+        margin-top: 60px;
     }
     .about h2 {
         font-size: 14px;
@@ -167,6 +209,17 @@ body {
     }
     .about p {
         font-size: 10px;
+    }
+}
+@media (max-width:720px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+    .about img {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -266,7 +319,225 @@ body {
 
     
 }
+@media (max-width:375px) {
+    #experience {
+        height: auto;
+        overflow: none;
+    }
+    .column {
+        display: flex;
+        flex-direction: row;
+    }
+    .box {
+        width: 150px;
+    }
+    .box h2 {
+        font-size: 2px;
+    }
+    
+}
+@media (max-width:720px) {
+    #experience {
+        height: auto;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: center; 
+    }
+    .box {
+        height: auto;
+        margin: 8px;
+    }
+    .box:hover{
+        transform: scale(1.1);
+        transition: all .5s;
+    }
+    
+    
+}
+@media (max-width:1080px) {
+    #experience {
+        overflow: none;
+        height: auto;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+        overflow-y: hidden;
+        height: auto;
+    }
+    .box {
+        width: 276px;
+        margin: 10px;
+    }
+    .box h2 {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width:1280px) {
+    #experience {
+        height: auto;
+        overflow: hidden;
+    }
+    .box {
+        overflow: hidden;
+        height: auto;
+    }
+}
 
+
+
+
+/* Education Section */
+#education {
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+#education h1{
+    margin: 30px;
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery img {
+    width: 360px;
+    height: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+.gallery img:hover {
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.skills {
+    display: block;
+    margin: 0 auto;
+}
+.rows {
+    max-width: 600px;
+    display: flex;
+}
+#skill-logo {
+    filter: grayscale(100%);
+    margin: 30px;
+    padding: 10px;
+}
+#skill-logo:hover {
+    filter: grayscale(0);
+    transition: all .8s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media (max-width:300px) {
+    #education {
+        height: auto;
+        overflow-y: hidden;
+    }
+    .gallery img {
+        width: 200px;
+        height: 250px;
+    }
+    .skills h1 {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    /* direction of images  */
+    #skill-logo {
+        display: flex;
+        flex-direction: column;
+        flex-flow: nowrap;
+    }
+    /* images in div  */
+    #skill-logo img {
+        width: 40px;
+        height: auto;
+    }
+    /* dive that contains images */
+    .skills {
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    .container {
+        height: 450px;
+        overflow-y: hidden;
+    }
+}
+@media (max-width:375px){
+    #education {
+        overflow: hidden;
+        height: auto;
+    }
+    .skills {
+        width: 280px;
+    }
+    #skill-logo {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+    #skills-logo img {
+        width: 50px;
+        height: auto;
+    }
+    .gallery img {
+        width: 200px;
+        height: 250px;
+    }
+}
+@media (max-width:720px) {
+    #education {
+        overflow: hidden;
+        height: auto;
+    }
+    .gallery img {
+        display: flex;
+       width: 200px;
+       height: 300px;
+    }
+    #skills-logo {
+        display: flex;
+    }
+    #skills-logo img {
+        width: 70px;
+        height: 30px;
+    }
+    
+}
+@media (max-width:1080px) {
+    #education {
+        height: auto;
+        overflow: hidden;
+    }
+    .gallery img {
+        width: 250px;
+        height: 300px;
+    }
+    .skills{  
+        overflow-y: hidden;
+        height: auto;
+      }
+}
+@media (max-width:1280px) {
+    #education{
+        height: auto;
+        overflow: hidden;
+    }
+    .gallery img {
+        width: 275px;
+    }
+    
+}
 
 /* Projects Section */
 #projects {
@@ -360,110 +631,6 @@ h2 {
 }
 
 
-/* Education Section */
-#education {
-    display: flex;
-    flex-direction: column;
-    height: 850px;
-    overflow: hidden;
-    margin-top: 10px;
-}
-#education h1{
-    margin: 30px;
-    text-align: center;
-}
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.gallery img {
-    width: 360px;
-    height: 400px;
-    padding: 10px;
-    margin: 10px;
-}
-.gallery img:hover {
-    background-color: white;
-    cursor: pointer;
-    transition: all 0.8s;
-}
-.skills {
-    display: block;
-    margin: 0 auto;
-}
-.rows {
-    max-width: 600px;
-    display: flex;
-}
-#skill-logo {
-    filter: grayscale(100%);
-    margin: 30px;
-    padding: 10px;
-}
-#skill-logo:hover {
-    filter: grayscale(0);
-    transition: all .8s;
-    transform: scale(1.1);
-    cursor: pointer;
-}
-@media (max-width:300px) {
-    #education {
-        height: auto;
-        overflow-y: hidden;
-    }
-    .gallery img {
-        width: 200px;
-        height: 250px;
-    }
-    .skills h1 {
-        font-size: 1rem;
-        display: flex;
-        justify-content: center;
-    }
-    /* direction of images  */
-    #skill-logo {
-        display: flex;
-        flex-direction: column;
-        flex-flow: nowrap;
-    }
-    /* images in div  */
-    #skill-logo img {
-        width: 40px;
-        height: auto;
-    }
-    /* dive that contains images */
-    .skills {
-        width: 250px;
-        margin-bottom: 10px;
-    }
-    .container {
-        height: 450px;
-        overflow-y: hidden;
-    }
-}
-@media (max-width:360px){
-    #education {
-        overflow: hidden;
-        height: auto;
-    }
-    .skills {
-        width: 320px;
-    }
-    #skill-logo {
-        display: flex;
-        flex-direction: column;
-        flex-flow: row wrap;
-    }
-    #skills-logo img {
-        width: 50px;
-        height: auto;
-    }
-    .gallery img {
-        width: 200px;
-        height: 250px;
-    }
-}
 
 /* Testimonials  Section */
 #testimonials {
@@ -555,16 +722,25 @@ h2 {
         padding: 5px;
     }
 }
-@media (max-width:360px){
+@media (max-width:375px){
     .input {
-        width: auto;
+        width: 100px;
     }
     #message{
         width: 70%;
     }
+    #Submit {
+        width: 50%;
+    }
 }
-#Submit {
-    width: 50%;
+@media (max-width:720px) {
+    .input {
+        width: 40%;
+    }
+    #Submit {
+        width: 20%;
+    }
+
 }
 
 
