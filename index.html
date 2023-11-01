@@ -17,6 +17,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/CSS/style.css">
+
+    <!-- animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
@@ -28,13 +31,13 @@
             <span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav" id="navbar">
-                <a href="#" class="nav-item nav-link">Home</a>
-                <a href="#aboutme" class="nav-item nav-link">About</a>
-                <a href="#" class="nav-item nav-link">Experience</a>
-                <a href="#" class="nav-item nav-link">Education</a>
-                <a href="#" class="nav-item nav-link">Projects</a>
-                <a href="#" class="nav-item nav-link">Testimonials</a>
-                <a href="#" class="nav-item nav-link">Contact</a>
+                <a href="#Home" class="nav-item nav-link">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#experience" class="nav-item nav-link">Experience</a>
+                <a href="#education" class="nav-item nav-link">Education</a>
+                <a href="#projects" class="nav-item nav-link">Projects</a>
+                <a href="#testimonials" class="nav-item nav-link">Testimonials</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </div>
@@ -43,12 +46,12 @@
 <main class="container-fluid"> 
   <!-- Home -->
  <section id="Home" class="container-md" >
-  <div class="container justify-content-center position-absolute me-auto ms-auto  " id="home-container" >
+  <div class="container justify-content-center position-absolute me-auto ms-auto animate__animated animate__fadeInUp " id="home-container" >
   <h1 class="display-3 text-black text-center text-uppercase">Hi, I Am Niyaaz Daniels</h1>
   <p class="display-6 text-black text-center text-uppercase">And This is My Portfolio</p>
   <div class="text-center">
-  <a href="#"><button class="btn btn-dark text-uppercase" id="button">Contact Me</button></a>
-  <div class="icon">
+  <a href="#"><button class="btn btn-dark text-uppercase animate__animated animate__fadeInRight" id="button">Contact Me</button></a>
+  <div class="icon m-2 p-3 animate__animated animate__fadeInLeft">
   <i class="fa-brands fa-github"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-regular fa-envelope"></i> <i class="fa-brands fa-instagram"></i>
 </div>  
 </div>
@@ -56,11 +59,11 @@
  </section>
 
 <!-- About Me -->
-<section class="container-md p-4" id="about" >
+<section class="container-md p-4" id="about" id="#about" >
   <h1 class="heading">About Me</h1>
   <div class="about">
-  <img src="https://i.postimg.cc/FRkg2D3C/me.png" alt="My Picture">
-  <div class="name">
+  <img src="https://i.postimg.cc/FRkg2D3C/me.png" alt="My Picture" class="animate__animated animate__backInLeft">
+  <div class="name animate__animated animate__backInRight">
       <h2>I'm Niyaaz Daniels</h2>
       <p> Hi, my name is Niyaaz Daniels, I am 25 years old, I am young, enthusiastic, energetic and hard working
           I believe that everything well earned doesn't come easy and that it takes lots of discipline, commitment
@@ -72,11 +75,11 @@
 </section>
 
 <!-- Experience -->
-<section class="container-md  p-4" id="experience">
+<section class="container-md  p-4" id="experience" id="experience">
   <div class="container-fluid">
     <h1 class="display-6 text-center text-dark">Experience</h1>
     <div class="column">
-      <div class="box">
+      <div class="box animate__animated animate__bounceInLeft" >
       <!-- job 1 -->
         <h2>Technical Call Centre Agent</h2>
         <p>Assisting customers with technical support telephonically, remotely, and via email. Assisting provided was but is not limited too assisting customers with any internet issues and 
@@ -84,16 +87,15 @@
         </p></div>
    <!-- job 2 -->
     <div class="column">
-      <div class="box">
+      <div class="box animate__animated animate__bounceIn">
         <h2>AV Technician in Training</h2>
         <p>Assisted all permanent and freelance technicians with event preparation, on-site setup, site cleanup and checking in of event equipment. Assisted with volunteer events on 
           weekends and public holidays to gain additional experience. Assisted drivers, warehouse staff and project managers with any and all assistance where skills were required and applicable.</p>
       </div>
    <!-- job 3 -->
     <div class="column">
-      <div class="box">
+      <div class="box animate__animated animate__bounceInRight">
         <h2>Warehouse Storeman</h2>
-        <br>
         <p>Solely in charge of warehouse operations, managing, conducting quality assurance checks for new stock arrivals, drafting reports for damaged goods and reporting to chain of command,
           assisting technical with any inquiries relating product resolutions and stock replacements, assisted sales representatives with reports of expected stock date arrivals and customer Project and
           delivery, ensured warehouse safety and security, cleanliness and upkeep of inventory for both warehouse and office employees, and much more.
@@ -102,7 +104,7 @@
 </section>
 
 <!-- Education -->
-<section class="container-md" id="education">
+<section class="container-md" id="education" id="#education">
   <h1 class="heading">Education</h1>
 <!-- Certificates -->
   <div class="gallery">
@@ -130,7 +132,7 @@
 </section>
 
 <!-- projects -->
-<section class="container-md" id="projects">
+<section class="container-md" id="projects" id="projects">
   <div class="container">
     <h1 class="display-6 text-center">Projects</h1>
     <ul class="cards">
@@ -213,7 +215,7 @@
 </section>
 
 <!-- testimonials -->
-<section class="container-md" id="testimonials">
+<section class="container-md" id="testimonials" id="#testimonials">
   <h1 class="display-6 text-center">Testimonials</h1>
   <div class="container mt-5 mb-5">
    
@@ -222,7 +224,7 @@
         <div class="col-md-4">
             <div class="card p-3 text-center px-4">
                 <div class="user-image">
-            <img src="https://i.postimg.cc/g0ybsdcr/Matthew.png" class="rounded-circle" width="50">
+            <img src="https://i.postimg.cc/g0ybsdcr/Matthew.png" class="rounded-circle" width="50" height="60px">
                 </div>
                 <div class="user-content">
                     <h5 class="mb-0">Matthew</h5>
@@ -235,7 +237,7 @@
         <div class="col-md-4">
             <div class="card p-3 text-center px-3">
                 <div class="user-image">
-            <img src="https://i.postimg.cc/T3tTvTMS/Daanyaal.png" class="rounded-circle" width="50">
+            <img src="https://i.postimg.cc/T3tTvTMS/Daanyaal.png" class="rounded-circle" width="50" height="80px">
                 </div>
                 <div class="user-content">
                     <h5 class="mb-0">Daanyaal</h5>
@@ -248,7 +250,7 @@
         <div class="col-md-4">
             <div class="card p-3 text-center px-3">
                 <div class="user-image">
-            <img src="https://i.postimg.cc/0Ncp6hdB/joel.png" class="rounded-circle" width="50">
+            <img src="https://i.postimg.cc/0Ncp6hdB/joel.png" class="rounded-circle" width="50" height="80px">
                 </div>
                 <div class="user-content">
                     <h5 class="mb-0">Joel Williams</h5>
@@ -261,7 +263,7 @@
             <div class="col-md-4">
               <div class="card p-3 text-center px-3">
                   <div class="user-image">
-              <img src="https://i.postimg.cc/LXwXK2fR/Jodi.png" class="rounded-circle" width="50">
+              <img src="https://i.postimg.cc/LXwXK2fR/Jodi.png" class="rounded-circle" width="50" height="80px">
                   </div>
                   <div class="user-content">
                       <h5 class="mb-0">Jodi Abrahams</h5>
@@ -282,30 +284,30 @@
 <section class="container-md" id="contact" id="#contact">
   <h1 class="display-6 text-center" id="h1">Contact Me</h1>
     <form action="https://formspree.io/f/xqkvweky" method="POST" class="form">
-        <input type="" name="name" class="input" placeholder="Enter Your Name" required>
-        <input type="email" name="email" class="input" placeholder="Enter Your Email" required>
-        <textarea name="message" id="message" cols="50" rows="10" placeholder="Enter Your Message">
+        <input id="input" type="" name="name" class="input" placeholder="Enter Your Name" required>
+        <input id="input" type="email" name="email" class="input" placeholder="Enter Your Email" required>
+        <textarea id="input" name="message" id="message" cols="50" rows="10" placeholder="Enter Your Message">
 
         </textarea>
-        <input type="submit" value="submit" id="Submit" >
+        <input id="submit" type="submit" value="submit" >
     </form>
 </section>
 </main>
-  <footer class="footer bottom-0" id="footer">
+  <footer class="footer container-fluid bottom-0" id="footer">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="Home" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Experience</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Projects</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Testimonials</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Education</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About</a></li>
+      <li class="nav-item"><a href="#experience" class="nav-link px-2 text-body-secondary">Experience</a></li>
+      <li class="nav-item"><a href="#projects" class="nav-link px-2 text-body-secondary">Projects</a></li>
+      <li class="nav-item"><a href="#testimonials" class="nav-link px-2 text-body-secondary">Testimonials</a></li>
+      <li class="nav-item"><a href="#education" class="nav-link px-2 text-body-secondary">Education</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Contact</a></li>
     </ul>
     <p class="text-center text-body-secondary">&copy; 2023 Niyaaz Daniels</p>
     <div class="icon text-center">
       <i class="fa-brands fa-facebook"></i>
       <i class="fa-brands fa-twitter"></i>  
-      <i class="fa-brands fa-github"></i> 
+     <a href="https://github.com/niyaazdaniels"><i class="fa-brands fa-github"></i></a>
       <i class="fa-brands fa-reddit"></i>
     </div>
   </footer>
