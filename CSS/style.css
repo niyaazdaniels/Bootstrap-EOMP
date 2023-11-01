@@ -64,7 +64,6 @@ body {
     left: 70px;
     top: 330px;
     font-weight: bolder;
-    border: 1px solid red;
     margin: 10px;
     padding: 10px;
 }
@@ -99,7 +98,6 @@ body {
     flex-direction: column;
     text-align: justify;
     height: 100%;
-    border: 1px solid red;
 }
 #about h1 {
     color:black ;
@@ -154,9 +152,21 @@ body {
     }
     .about p {
         font-size: 10px;
-        box-shadow: 2px 4px 16px rgb(72, 72, 72);
+
         padding: 5px;
-        background-color: var(--cardbg);
+    }
+}
+@media (max-width:360px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+    .about h2 {
+        font-size: 14px;
+    }
+    .about p {
+        font-size: 10px;
     }
 }
 
@@ -168,7 +178,6 @@ body {
     height: auto;
     width: 100%;
     overflow-y: hidden;
-    border: 1px solid red;
     margin-top: 10px;
 }
 /* Experience box individual */
@@ -186,7 +195,6 @@ body {
     padding: 20px;
     margin: 40px;
     color: var(--white);
-    
 }
 .box p {
     font-size: 14px;
@@ -218,20 +226,46 @@ body {
         font-size: 10px;
     }
     .box {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
         margin: 4px;
         padding: 8px;
         height: 200px;
         width: 300px;
-        display: flex;
-        flex-direction: column;
-        flex-flow: row wrap;
-        
     }
     .box:hover{
         transform: none;
     }
     }
+@media (max-width:360px) {
+    #experience {
+        display: flex;
+        height: auto;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+        overflow-y: hidden;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+        height: auto;
+        width: 300px;
+        margin: 10px;
+    }
+    .box p{
+        font-size: 10px;
+    }
+    .box h2{
+        font-size: 14px;
+    }
 
+    
+}
 
 
 /* Projects Section */
@@ -241,7 +275,6 @@ body {
     padding: 0 15px;
     margin: 0 auto;
     margin-top: 10px;
-    border: 1px solid red;
 }
 h2 {
     font-size: 32px;
@@ -333,7 +366,6 @@ h2 {
     flex-direction: column;
     height: 850px;
     overflow: hidden;
-    border: 1px solid red;
     margin-top: 10px;
 }
 #education h1{
@@ -376,36 +408,66 @@ h2 {
     cursor: pointer;
 }
 @media (max-width:300px) {
-    .gallery img {
-        width: 200px;
-        height: 250px;
-    }
     #education {
         height: auto;
         overflow-y: hidden;
     }
+    .gallery img {
+        width: 200px;
+        height: 250px;
+    }
     .skills h1 {
         font-size: 1rem;
         display: flex;
-        text-align: center;
+        justify-content: center;
     }
+    /* direction of images  */
     #skill-logo {
         display: flex;
-        flex-direction: row;
-        flex-flow: row wrap;
-        
+        flex-direction: column;
+        flex-flow: nowrap;
+    }
+    /* images in div  */
+    #skill-logo img {
+        width: 40px;
+        height: auto;
+    }
+    /* dive that contains images */
+    .skills {
+        width: 250px;
+        margin-bottom: 10px;
     }
     .container {
         height: 450px;
         overflow-y: hidden;
     }
 }
-
+@media (max-width:360px){
+    #education {
+        overflow: hidden;
+        height: auto;
+    }
+    .skills {
+        width: 320px;
+    }
+    #skill-logo {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+    #skills-logo img {
+        width: 50px;
+        height: auto;
+    }
+    .gallery img {
+        width: 200px;
+        height: 250px;
+    }
+}
 
 /* Testimonials  Section */
 #testimonials {
     height: auto;
-    border: 1px solid red;
     margin-top:10px ;
 }
 .card{
@@ -437,7 +499,6 @@ h2 {
     height: auto;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     margin-top: 10px;
 }
 #h1 {
@@ -493,6 +554,17 @@ h2 {
         width: 50%;
         padding: 5px;
     }
+}
+@media (max-width:360px){
+    .input {
+        width: auto;
+    }
+    #message{
+        width: 70%;
+    }
+}
+#Submit {
+    width: 50%;
 }
 
 
