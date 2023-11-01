@@ -61,16 +61,22 @@ body {
 /* container */
 #home-container {
     position: absolute;
-    left: 0px;
+    left: 70px;
     top: 330px;
     font-weight: bolder;
+    border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
 }
 @media (max-width:300px) {
     #home-container {
         display: block;
+        max-width: 280px;
     }
     #home-container h1{
+        margin-top: 15px;
         font-size: 16px;
+        
     }
     #home-container p{
         font-size: 12px;
@@ -93,10 +99,11 @@ body {
     flex-direction: column;
     text-align: justify;
     height: 100%;
+    border: 1px solid red;
 }
 #about h1 {
     color:black ;
-    margin: 55px;
+    margin: 45px;
     text-align: center;
 }
 .about {
@@ -127,12 +134,14 @@ body {
 @media (max-width:300px) {
    
     .about {
+        margin-top: 60px;
+        display: flex;
         flex-direction: column;
-        height: 1000px;
+        flex-flow: row wrap;
         overflow-y: hidden ;
     }
     .about h2 {
-        font-size: 1rem;
+        font-size: 14px;
         text-align: center;
     }
     .heading {
@@ -140,8 +149,8 @@ body {
     }
     .about img {
         width: 200px;
-        height: 200px;
-        padding: 0px 15px;
+        height: 250px;
+        padding: 0px 10px;
     }
     .about p {
         font-size: 10px;
@@ -156,9 +165,11 @@ body {
 
 /* Experience Section */
 #experience {
-    height: 600px;
+    height: auto;
     width: 100%;
     overflow-y: hidden;
+    border: 1px solid red;
+    margin-top: 10px;
 }
 /* Experience box individual */
 .column {
@@ -175,6 +186,10 @@ body {
     padding: 20px;
     margin: 40px;
     color: var(--white);
+    
+}
+.box p {
+    font-size: 14px;
 }
 .box:hover{
     transform: scale(1.1);
@@ -184,26 +199,33 @@ body {
     #experience {
         display: flex;
         flex-direction: column;
-        flex-flow: nowrap;
-        height: 700px;
-        overflow:hidden;
+        height: auto;
     }
     .column{
         display: flex;
         flex-direction: column;
+        flex-flow: row wrap;
+        height: 90%;
+        width: 200px;
+        gap: 1;
+        overflow-y: hidden;
     }
     .box p{
-        display: block;
-        width: 250px;
+        width: 300px;
         font-size: 8px;
     }
     .box h2{
         font-size: 10px;
-        
     }
     .box {
-        margin: 3px;
+        margin: 4px;
         padding: 8px;
+        height: 200px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+        
     }
     .box:hover{
         transform: none;
@@ -213,11 +235,13 @@ body {
 
 
 /* Projects Section */
-.container {
-    max-width: 1400px;
+#projects {
+    max-width: 1320px;
     height: 500px;
     padding: 0 15px;
     margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid red;
 }
 h2 {
     font-size: 32px;
@@ -309,6 +333,8 @@ h2 {
     flex-direction: column;
     height: 850px;
     overflow: hidden;
+    border: 1px solid red;
+    margin-top: 10px;
 }
 #education h1{
     margin: 30px;
@@ -355,28 +381,33 @@ h2 {
         height: 250px;
     }
     #education {
-        height: 1000px;
+        height: auto;
         overflow-y: hidden;
     }
-    .skills {
-        display: block;
-        position: relative;
-        left: 0;
+    .skills h1 {
+        font-size: 1rem;
+        display: flex;
+        text-align: center;
     }
     #skill-logo {
-       width: 50px;
-       height: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        
     }
     .container {
         height: 450px;
-    }
-    #education h1 {
-        overflow: hidden;
+        overflow-y: hidden;
     }
 }
 
 
 /* Testimonials  Section */
+#testimonials {
+    height: auto;
+    border: 1px solid red;
+    margin-top:10px ;
+}
 .card{
     border:none;
 }
@@ -387,21 +418,27 @@ h2 {
 @media (max-width:300px) {
     #testimonials {
         height: auto;
-        overflow-y: hidden;
     }
     .card {
         padding: 5px;
         margin: 5px;
+    }
+    .container {
+        overflow-y: hidden;
+        height: auto;
     }
 }
 
 
 /* Contact Me Section */
 #contact {
-    height: 500px;
+    overflow: hidden;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
+    margin-top: 10px;
 }
 #h1 {
     margin: 50px;

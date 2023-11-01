@@ -40,9 +40,9 @@
     </div>
 </nav>
 
-<main>
+<main class="container-fluid"> 
   <!-- Home -->
- <section id="Home" class="container-fluid" >
+ <section id="Home" class="container-md" >
   <div class="container justify-content-center" id="home-container" >
   <h1 class="display-3 text-black text-center text-uppercase">Hi, I Am Niyaaz Daniels</h1>
   <p class="display-6 text-black text-center text-uppercase">And This is My Portfolio</p>
@@ -52,7 +52,7 @@
  </section>
 
 <!-- About Me -->
-<section class="container-fluid p-4" id="about" >
+<section class="container-md p-4" id="about" >
   <h1 class="heading">About Me</h1>
   <div class="about">
   <img src="https://i.postimg.cc/FRkg2D3C/me.png" alt="My Picture">
@@ -68,8 +68,8 @@
 </section>
 
 <!-- Experience -->
-<section class="container-fluid p-4" id="experience">
-  <div class="container">
+<section class="container-md  p-4" id="experience">
+  <div class="container-fluid">
     <h1 class="display-6 text-center text-dark">Experience</h1>
     <div class="column">
       <div class="box">
@@ -98,7 +98,7 @@
 </section>
 
 <!-- projects -->
-<section class="container-fluid" id="projects">
+<section class="container-md" id="projects">
   <div class="container">
     <h1 class="display-6 text-center">Projects</h1>
     <ul class="cards">
@@ -181,7 +181,7 @@
 </section>
 
 <!-- testimonials -->
-<section class="container-fluid" id="testimonials">
+<section class="container-md" id="testimonials">
   <h1 class="display-6 text-center">Testimonials</h1>
   <div class="container mt-5 mb-5">
    
@@ -226,13 +226,26 @@
                 </div>
                 </div>
             </div>
+            <div class="col-md-4">
+              <div class="card p-3 text-center px-3">
+                  <div class="user-image">
+              <img src="https://i.postimg.cc/0Ncp6hdB/joel.png" class="rounded-circle" width="50">
+                  </div>
+                  <div class="user-content">
+                      <h5 class="mb-0">Joel</h5>
+                      <span>Web Developer - Colleague</span>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  </div>
+              </div>
         </div>
     </div>
 </div>
 </section>
 
 <!-- Education -->
-<section class="container-fluid" id="education">
+<section class="container-md" id="education">
   <h1 class="heading">Education</h1>
 <!-- Certificates -->
   <div class="gallery">
@@ -244,15 +257,15 @@
       <h1> Technical Skills</h1>
         <div class="rows">
           <!-- First Image -->
-          <div class="col-md" id="skill-logo">
+          <div class="col-sm" id="skill-logo">
         <img src="https://i.postimg.cc/FKfzhqzv/Bootstrap-5-Logo.png" width="120px" height="100px"alt="HTML5" >
         </div>
         <!-- Second Image -->
-          <div class="col-md" id="skill-logo">
+          <div class="col-sm" id="skill-logo">
        <img src="https://i.postimg.cc/mZFbhCTY/CSS-Logo.png" alt="CSS" width="120px" height="100px">
         </div>
         <!-- Third Image -->
-          <div class="col-md" id="skill-logo">
+          <div class="col-sm" id="skill-logo">
            <img src="https://i.postimg.cc/NFQphR43/HTML-5-Logo.png" alt="Bootstrap" width="120px" height="100px">
         </div>
         </div>
@@ -260,12 +273,12 @@
 </section>
 
 <!-- contact me -->
-<section class="container-fluid" id="contactme" id="#contactme">
+<section class="container-md" id="contact" id="#contact">
   <h1 class="display-6 text-center" id="h1">Contact Me</h1>
     <form action="https://formspree.io/f/xqkvweky" method="POST" class="form">
         <input type="" name="name" class="input" placeholder="Enter Your Name" required>
         <input type="email" name="email" class="input" placeholder="Enter Your Email" required>
-        <textarea name="message" id="message" cols="70" rows="10" placeholder="Enter Your Message">
+        <textarea name="message" id="message" cols="50" rows="10" placeholder="Enter Your Message">
 
         </textarea>
         <input type="submit" value="submit" id="Submit" >
