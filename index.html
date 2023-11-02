@@ -20,17 +20,22 @@
 
     <!-- animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
+<a href="top"></a>
   <!-- Navbar with Logo -->
-  <nav class="navbar container-fluid navbar-expand-lg navbar-dark bg-gradient w-100 " >
+  <nav class="navbar container-fluid navbar-expand-lg navbar-dark bg-gradient w-100 position-fixed top-0" >
     <div class="container-fluid">
         <img src="/assets/header-logo.png" alt="logo" width="230px" height="150px" id="nav-image" >
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav" id="navbar">
+            <div class="navbar-nav position-sticky" id="navbar">
                 <a href="#Home" class="nav-item nav-link">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
                 <a href="#experience" class="nav-item nav-link">Experience</a>
@@ -42,17 +47,19 @@
         </div>
     </div>
 </nav>
-
+  <a href="#top"><button class="myBtn"><i class="fa-solid fa-angles-up animate__animated animate__fadeIn animate__repeat-1"></i></a></button>
 <main class="container-fluid"> 
   <!-- Home -->
  <section id="Home" class="container-md" >
-  <div class="container justify-content-center position-absolute me-auto ms-auto animate__animated animate__fadeInDown " id="home-container" >
-  <h1 class="display-3 text-black text-center text-uppercase">Hi, I Am Niyaaz Daniels</h1>
-  <p class="display-6 text-black text-center text-uppercase">And This is My Portfolio</p>
+  <div class="container justify-content-center position-absolute me-auto ms-auto animate__animated animate__fadeInDown " id="home-container">
+  <h6 class="text-center text-black">Hi, I am</h6>
+  <h1 class="text-black text-center">Niyaaz Daniels</h1>
+  <h4 class="text-black text-center">Aspiring Game Developer</h4>
+  <h5 class="text-black text-center">Welcome to my Portfolio, I am a student at Life Choices.</h5>
   <div class="text-center">
   <a href="#contact"><button class="btn btn-dark text-uppercase animate__animated animate__fadeInLeft" id="button">Contact Me</button></a>
   <a href="/assets/Niyaaz Daniels (Updated).pdf"><button class="btn btn-dark text-uppercase animate__animated animate__fadeInRight" id="button">Resume</button></a>
-  <div class="icon m-2 p-3 ">
+  <div class="icon m-2 p-2 ">
  <a href="https://github.com/niyaazdaniels"><i class="fa-brands fa-github"></i></a> 
  <a href="https://twitter.com/daniels_niyaaz"><i class="fa-brands fa-twitter"></i></a>
  <a href="https://www.linkedin.com/in/niyaaz-daniels-6694a7129/"><i class="fa-brands fa-linkedin"></i></a> 
@@ -68,13 +75,12 @@
   <img src="https://i.postimg.cc/FRkg2D3C/me.png" alt="My Picture" class="animate__animated animate__backInLeft">
   <div class="name animate__animated animate__backInRight">
       <h2>I'm Niyaaz Daniels</h2>
-      <p> Hi, my name is Niyaaz Daniels, I am 25 years old, I am young, enthusiastic, energetic and hard working
-          I believe that everything well earned doesn't come easy and that it takes lots of discipline, commitment
-          and self love because without those we cannot thrive as individuals in a world that is ever changing.
-          I have a passion for technology, I've always been intrigued by wanting to know how things operate and how things work,
-          there is no substitute for hard work, if it can be done easily, do it easy, if it can be the hard way, do it the hard way, 
-          but no matter what, just get it done because it is easier to complain than to work, so be quiet in difficulty and put in 
-          the work so it wont be difficult in the future.</p>
+      <p> I aspire to be a full stack developer and Game Developer. Learning is key in life and to never have a fixed mindset of "I Know Enough". I have a keen interest
+        in learning coding, a burning passion to create and to provide. I enjoy helping everyone. I am fueled with energy and passion. When I am not 
+        infront of a device I spend my time with family or nature, nothing more soothing than hearing the wind blow between the trees without our modern
+        day noise. I enjoy having a balance towards everything as too much of something is bad. There's no substitute for hardwork. If it's easy then do it
+        easy, if it's hard than do it hard, just get it done because failure is limitations that you set for yourself, so I choose to be limitless.
+      </p>
 </section>
 
 <!-- Experience -->
@@ -113,7 +119,7 @@
   <div class="gallery">
     <img src="https://i.postimg.cc/L5v068sy/mc.png" alt="Matric Certificate">
       <img src="https://i.postimg.cc/xC5PLFS8/degree.png" alt="Bacherlors Degree">
-          <img src="" alt="Life Choices Certificate">
+          <img src="" alt="Life Choices Certificate" class="loader">
         </div>
 <!-- Skills -->
     <div id="skills" class="skills">
@@ -233,7 +239,7 @@
                 <div class="user-content">
                     <h5 class="mb-0">Matthew</h5>
                     <span>Lecturer</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p> Niyaaz is a hardworking and dedicated individual. His analytical and creative skills are exceptional. He is confident, shows great work ethic and knows how to work in a team.</p>
                 </div>
             </div>
         </div>
@@ -245,8 +251,8 @@
                 </div>
                 <div class="user-content">
                     <h5 class="mb-0">Daanyaal</h5>
-                    <span>Web Developer - Colleague</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <span>Aspring Full Stack Developer -Peer</span>
+                    <p>Niyaaz, is a coding wizard! His passion for problem solving shows in his personality and work.  He's always ready to help, patient with questions, and fosters a supportive learning environment. Niyaaz is an invaluable asset to my team.</p>
                 </div>
             </div>
         </div>
@@ -282,9 +288,7 @@
 </div>
 </section>
 
-
-
-<!-- contact me -->
+<!-- contact  -->
 <section class="container-md" id="contact" id="#contact">
   <h1 class="display-6 text-center" id="h1">Contact Me</h1>
     <form action="https://formspree.io/f/xqkvweky" method="POST" class="form">
@@ -306,9 +310,10 @@
       <li class="nav-item"><a href="#testimonials" class="nav-link px-2 text-body-secondary">Testimonials</a></li>
       <li class="nav-item"><a href="#education" class="nav-link px-2 text-body-secondary">Education</a></li>
       <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      
     </ul>
     <p class="text-center text-body-secondary">&copy; 2023 Niyaaz Daniels</p>
-    <div class="icon text-center">
+    <div class="icons-feet text-center">
       <a href="https://twitter.com/daniels_niyaaz"><i class="fa-brands fa-twitter"></i></a>
      <a href="https://github.com/niyaazdaniels"><i class="fa-brands fa-github"></i></a>
      <a href="https://www.linkedin.com/in/niyaaz-daniels-6694a7129/"><i class="fa-brands fa-linkedin"></i></a> 

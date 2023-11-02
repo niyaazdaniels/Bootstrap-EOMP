@@ -1,4 +1,5 @@
 :root {
+
     --cardbg: #4f7178;
     --something: #e5e5e5c4;
     --text: #000000;
@@ -17,16 +18,12 @@
 
     /* Animation */
     --animate-duration: 4s;
-    --animate-iteration-count: 1;
+    --animate-iteration-count: 2;
+    --animate-delay: 2s;
+
+     scroll-behavior: smooth
+
 }
-
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;900&family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800&display=swap');
-
-/* Font Specificity
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto Condensed', sans-serif; */
-
 
 * {
     margin: 0;
@@ -36,17 +33,24 @@ font-family: 'Roboto Condensed', sans-serif; */
     overflow-x: hidden;
 }
 /* navbar anchor */
+
+#navbar {
+    position: sticky;
+    top: 0px;
+}
 #navbar a{
     color: white;
     text-decoration: none;
     margin: 20px; 
     font-size: 20px; 
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 /* when hovering cursor over nav item */
 #navbar a:hover {
-    border-bottom: 2px solid yellow;
+    box-shadow: 0px 0px 12px var(--white);
+    padding: 8px;
+    border-radius: 25px;
     color: var(--text);
     transition: all .6s;
 }
@@ -54,8 +58,22 @@ font-family: 'Roboto Condensed', sans-serif; */
 body {
     background: linear-gradient(#1985A1, #4C5C68,#46494C,#C4C3C6,#DCDCDD) no-repeat;
 }
-
-
+/* floating button */
+.myBtn i{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    border: none;
+    border-radius: 30px;
+    height: auto;
+    background-color: var(--Gainsboro);
+    color: var(--DavysGrey);
+    padding: 8px;
+}
+.myBtn i:hover {
+    color: var(--link);
+    transition: all .2s ease-in;
+}
 
 /* Home Section */
 #Home {
@@ -70,10 +88,20 @@ body {
     font-weight: bolder;
     margin: 10px;
     padding: 10px;
-    font-family: 'Roboto Condensed', sans-serif;
 }
-
-
+#head {
+    font-family: 'Bebas Neue', sans-serif;
+}
+.icon i{
+    color: black;
+    padding: 10px;
+}
+.icon i:hover {
+    box-shadow: 0px 0px 10px var(--offWhite);
+    border-radius: 30px;
+    transition: all .4s ease-in;
+    color: var(--Gainsboro);
+}
 
 
 /* About Section */
@@ -175,11 +203,13 @@ body {
     height: 400px;
     padding: 10px;
     margin: 10px;
+    filter: grayscale(100%);
 }
 .gallery img:hover {
     background-color: var(--BlueMunsell);
     cursor: pointer;
     transition: all 0.8s;
+    filter: grayscale(0%);
 }
 .skills {
     display: block;
@@ -206,7 +236,6 @@ body {
     height: 100%;
     overflow-y: hidden;
 }
-
 
 
 /* Projects Section */
@@ -356,6 +385,19 @@ h2 {
     cursor: pointer;
 }
 
+/* Footer Icons */
+.icons-feet i {
+    color: black;
+    padding: 5px;
+    margin: 5px;
+}
+.icons-feet i:hover{
+    box-shadow: 0px 0px 10px var(--BlackCoral);
+    border-radius: 40px;
+    color: var(--scroll);
+    transition: all .5s ease-in-out;
+}
+
 
 /* Contact Media Queries */
 @media (max-width:375px){
@@ -462,11 +504,11 @@ h2 {
     }
     .about img {
         width: 200px;
-        height: 250px;
+        height: 240px;
         padding: 0px 10px;
     }
     .about p {
-        font-size: 10px;
+        font-size: 8px;
         padding: 5px;
     }
 }
