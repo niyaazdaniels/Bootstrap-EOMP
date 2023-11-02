@@ -21,7 +21,7 @@
     --animate-iteration-count: 2;
     --animate-delay: 2s;
 
-     scroll-behavior: smooth
+     scroll-behavior:auto;
 
 }
 
@@ -88,9 +88,6 @@ body {
     font-weight: bolder;
     margin: 10px;
     padding: 10px;
-}
-#head {
-    font-family: 'Bebas Neue', sans-serif;
 }
 .icon i{
     color: black;
@@ -201,6 +198,7 @@ body {
     cursor: pointer;
     transition: all 0.8s;
     filter: grayscale(0%);
+    transform: scale(.9);
 }
 .skills {
     display: block;
@@ -221,11 +219,9 @@ body {
 }
 #skill-logo:hover {
     filter: grayscale(0);
-    transition: all .8s;
-    transform: scale(1.1);
     cursor: pointer;
-    height: 100%;
-    overflow-y: hidden;
+    transition: all .5s ease-out;
+   
 }
 
 
@@ -261,12 +257,10 @@ h2 {
     scroll-snap-align: start;
     transition: all 0.4s;
 }
-/* when hovering over individual cards */
 .card:hover {
     color: var(--offWhite);
     background:var(--cardbg);
 }
-/* card heading */
 .card .card-title {
     font-size: 20px;
 }
@@ -276,7 +270,6 @@ h2 {
 .card-content{
     text-align: center;
 }
-/* link within cards i.e Github and Netlify */
 .card .card-link {
     display: inline-block;
     text-decoration: none;
@@ -286,7 +279,6 @@ h2 {
     border-radius: 8px;
     transition: background 0.4s;
 }
-/* when hovering over the card, link changes */
 .card:hover .card-link {
     background: var(--link);
 }
@@ -309,7 +301,6 @@ h2 {
 /* Testimonials  Section */
 #testimonials {
     height: auto;
-    margin-top:10px ;
 }
 .card{
     border:none;
@@ -324,7 +315,6 @@ h2 {
 
 /* Contact Me Section */
 #contact {
-    overflow: hidden;
     width: 100%;
     height: auto;
     display: flex;
@@ -802,3 +792,5 @@ h2 {
         margin: 10px;
     }
 }
+  
+  
