@@ -29,21 +29,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Poppi';
     overflow-x: hidden;
 }
 /* navbar anchor */
 
-#navbar {
-    position: sticky;
-    top: 0px;
-}
 #navbar a{
     color: white;
     text-decoration: none;
     margin: 20px; 
     font-size: 20px; 
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppi', sans-serif; 
 }
 
 /* when hovering cursor over nav item */
@@ -89,6 +85,7 @@ body {
     margin: 10px;
     padding: 10px;
 }
+
 .icon i{
     color: black;
     padding: 10px;
@@ -657,7 +654,6 @@ h2 {
         left: 18px;
         
     }
-    /* dive that contains images */
     .skills {
         width: 250px;
         margin-bottom: 10px;
@@ -720,12 +716,11 @@ h2 {
     }
     #home-container h1{
         margin-top: 15px;
-        font-size: 16px;
+        font-size: 20px;
     }
     #home-container h2{
         font-size: 12px;
     }
-    
     #home-container p{
         font-size: 10px;
     }
