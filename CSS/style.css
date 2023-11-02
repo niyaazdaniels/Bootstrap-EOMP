@@ -84,7 +84,7 @@ body {
 #home-container {
     position: absolute;
     left: 70px;
-    top: 330px;
+    top: 280px;
     font-weight: bolder;
     margin: 10px;
     padding: 10px;
@@ -141,13 +141,12 @@ body {
     overflow-y: hidden;
     margin-top: 10px;
 }
-/* Experience box individual */
+
 .column {
     display: flex;
     flex-direction: row;
     flex-flow: nowrap;
 }
-/* Experience Box */
 .box {
     width: 400px;
     height: 500px;
@@ -185,6 +184,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+ 
 }
 .gallery img {
     width: 360px;
@@ -379,11 +379,11 @@ h2 {
 
 /* Contact Media Queries */
 @media (max-width:300px){
-    #input {
-       width: 100%;
+    .input {
+       width: auto;
     }
     #message {
-        width: 70%;
+        width: auto;
     }
     #submit {
         width: 50%;
@@ -402,7 +402,6 @@ h2 {
     #submit {
         width: 50%;
     }
-
 }   
 
 
