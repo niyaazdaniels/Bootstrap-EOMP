@@ -622,13 +622,11 @@ h2 {
         display: flex;
         justify-content: center;
     }
-    /* direction of images  */
     #skill-logo {
         display: flex;
         flex-direction: column;
         flex-flow: nowrap;
     }
-    /* images in div  */
     #skill-logo img {
         width: 50px;
         height: auto;
