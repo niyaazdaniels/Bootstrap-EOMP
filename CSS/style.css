@@ -81,6 +81,7 @@ body {
     font-weight: bolder;
     margin: 10px;
     padding: 10px;
+   
 }
 .icon i{
     color: var(--text);
@@ -774,4 +775,31 @@ h2 {
     }
 }
   
-  
+
+
+
+/* Keyframe for text animation */
+@keyframes firstHeadings {
+    0% {
+        color: black ;
+    }
+    25% {
+        color: #C4C3C6;
+    }
+    50% {
+        color: grey;
+    }
+    75% {
+        color: rgb(174, 147, 40);
+    }
+    100% {
+        color: white;
+    }
+}
+
+ .Intro {
+    animation-name: firstHeadings;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
