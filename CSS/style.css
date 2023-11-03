@@ -7,6 +7,7 @@
     --white: #edf2f4;
     --link: rgb(134, 32, 32);
     --scroll:#626262;
+    --hover: #ca4e4e;
 
     /* gradient */
 
@@ -130,12 +131,8 @@ body {
 
 /* Experience Section */
 #experience {
-    height: auto;
-    width: 100%;
-    overflow-y: hidden;
     margin-top: 10px;
 }
-
 .column {
     display: flex;
     flex-direction: row;
@@ -151,7 +148,7 @@ body {
     color: var(--white);
 }
 .box p {
-    font-size: 14px;
+    font-size: 1rem;
 }
 .box:hover{
     transform: scale(1.1);
@@ -164,7 +161,6 @@ body {
 
 /* Education Section */
 #education {
-    display: flex;
     flex-direction: column;
     height: 850px;
     overflow: hidden;
@@ -231,7 +227,7 @@ h2 {
     grid-auto-columns: 100%;
     grid-column-gap: 10px;
     grid-auto-flow: column;
-    padding: 25px 0px;
+    padding: 20px 0px;
     list-style: none;
     overflow-x: scroll;
     -ms-scroll-snap-type: x mandatory;
@@ -239,16 +235,16 @@ h2 {
 }
 .card {
     flex-direction: column;
-    padding: 15px;
+    padding: 12px;
     background: var(--offWhite);
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    border-radius: 30px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 30%);
     scroll-snap-align: start;
     transition: all 0.4s;
 }
 .card:hover {
-    color: var(--offWhite);
-    background:var(--cardbg);
+    color: var(--white);
+    background:var(--BlueMunsell);
 }
 .card .card-title {
     font-size: 20px;
@@ -269,7 +265,7 @@ h2 {
     transition: background 0.4s;
 }
 .card:hover .card-link {
-    background: var(--link);
+    background: var(--hover);
 }
 .cards::-webkit-scrollbar {
     height: 12px;
@@ -344,11 +340,11 @@ h2 {
     color: white;
     border: none;
     outline: none;
-    text-transform: uppercase;
 }
 #submit:hover {
-    background-color: green;
-    color: white;
+    background-color: var(--BlueMunsell);
+    color: var(--white);
+    transition: all .4s ease-in-out;
     cursor: pointer;
 }
 
@@ -361,7 +357,7 @@ h2 {
     margin: 5px;
 }
 .icons-feet i:hover{
-    box-shadow: 0px 0px 10px var(--BlackCoral);
+    box-shadow: 0px 0px 10px var(--BlueMunsell);
     border-radius: 40px;
     color: var(--scroll);
     transition: all .5s ease-in-out;
