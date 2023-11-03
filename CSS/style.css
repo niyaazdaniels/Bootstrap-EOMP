@@ -716,10 +716,13 @@ h2 {
     }
     #home-container h1{
         margin-top: 15px;
-        font-size: 20px;
+        font-size: 24px;
     }
-    #home-container h2{
-        font-size: 12px;
+    #home-container h4{
+        font-size: 14px;
+    }
+    #home-container h5{
+        font-size: 14px;
     }
     #home-container p{
         font-size: 10px;
