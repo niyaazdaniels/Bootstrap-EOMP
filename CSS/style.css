@@ -32,7 +32,6 @@
     font-family: 'Poppi';
     overflow-x: hidden;
 }
-/* navbar anchor */
 
 #navbar a{
     color: white;
@@ -363,7 +362,31 @@ h2 {
     color: var(--scroll);
     transition: all .5s ease-in-out;
 }
-
+.modal-btn{
+    left: 47%;
+}
+@media (max-width:300px){
+.modal-btn {
+    left: 100px;
+}
+}
+@media (max-width:720px){
+.modal-btn {
+    left: 310px;
+}
+}
+@media (max-width:1080px) {
+   .modal-btn {
+    left: 45.5%;
+   } 
+   
+    
+}
+@media (max-width:1280px){
+    .modal-btn{
+        left: 46.5%;
+    }
+}
 
 /* Contact Media Queries */
 @media (max-width:300px){
